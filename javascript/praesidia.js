@@ -1,38 +1,8 @@
-function init() {
-    var xhttp = new XMLHttpRequest();
-    var propraesidia = new Object;
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            propraesidia = JSON.parse(xhttp.responseText);
-        }
-    }
-    xhttp.open("GET", "propraesidia.json", true);
-    xhttp.send();
-}
-window.onload = init;
-
-
-/*
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 marge">
-            <div class="card h-100">
-                <img class="card-img-top" src="img/praesidium18-19/bert.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Praeses</h5>
-                    <p class="card-text">Gegroet vrienden!</br></br> Mijn naam is Bert en het komend jaar zal ik vol trots de rol van praeses op mij nemen. 
-                        De gouden pretcilinders zijn mij niet vreemd en daarom zullen jullie mij volgend jaar van tijd tot tijd wel 
-                        eens op café terug vinden. Kom gerust eens af om een praatje te slaan en om eens te klinken 
-                        op die mooie studententijd!</p>
-                    <p class="card-text"><small class="text-muted">Bert Vynckier</small></p>
-                </div>
-            </div>
-        </div>
-*/
-
 var propraesidia = [{
     "academiejaar": "2017-2018",
     "praesidium": {
-        "praeses": "Claudia Vanhaverbeke",
-        "penning": "Tibo Rigole",
+        "Praeses": "Claudia Vanhaverbeke",
+        "Penning": "Tibo Rigole",
         "Secretaris": "Eva Vlaminck",
         "Feest 1": "Iene Deroo",
         "Feest 2": "Bert Vynckier",
@@ -62,7 +32,7 @@ var propraesidia = [{
 }, {
     "academiejaar": "2015-2016",
     "praesidium": {
-        "praeses": "Louis Vermeulen",
+        "Praeses": "Louis Vermeulen",
         "Vice": "Arnoud Deltour",
         "Penning": "Matthias Beckers",
         "Secretaris": "Clementine Vanoverberghe",
@@ -192,3 +162,54 @@ var propraesidia = [{
 }
 
 ];
+
+function init() {
+    var propraesidiaHTML = document.getElementById("pros");
+    for(let i = 0; i<propraesidia.length; i++){
+        var current = propraesidia[i];
+        var praesidiumtekst = "";
+        for(var key in current.praesidium){
+            if(key=="Praeses")
+                praesidiumtekst += `<strong>${key}: ${current.praesidium[key]}</strong><br><br>`;
+            else
+            praesidiumtekst += `${key}: ${current.praesidium[key]}<br>`;
+        }
+        propraesidiaHTML.insertAdjacentHTML("beforeend", `
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 marge">
+            <div class="card h-100">
+                <img class="card-img-top" src="img/propraesidia/${current.academiejaar}.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Academiejaar ${current.academiejaar}</h5>
+                    <p class="card-text">${praesidiumtekst}</p>
+                </div>
+            </div>
+        </div>`
+        )
+    }
+}
+window.onload = init;
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
