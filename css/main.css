@@ -13,9 +13,14 @@ body{
     /* background-color: rgb(204, 204, 204); 
     
     */
-    background: linear-gradient(#FFFFAF,black);
+    background: linear-gradient(#E7DC7A,#383838);
     background-attachment: fixed;
     
+}
+.ytvideo{
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
 }
 .lead {
     font-size: 0.9em;
@@ -39,42 +44,60 @@ a > button{
 @media screen and (max-width: 576px) {
     .content {
       width:100%;
+      position: relative;
+      top: 60px;
     }
     .navbar{
         border-radius: 0;
         margin-top: 0;
+        position: fixed;
+        top:0;
+        z-index: 2;
+        width: 100%;
+        box-shadow: 0px 0px 10px black;
+        
+    }
+    iframe{
+        width: 300px;
+        height: 200px;
     }
     .jumbotron{
         border-radius: 0;
     }
-
-}
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-   /* background: #343a40; */
-   background: linear-gradient(#FFFFAF,black);
-}
  
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-/* Handle on hover */
 
+}
+.iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    height:200px;
+  }
+  
+.iframe-container iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+}
+
+.clublied{
+    text-align: center;
+}
+.clubliedinfo{
+    box-sizing: border-box;
+    padding-top: 10px;
+    overflow: hidden;
+}
 .madeBy{
-    position: absolute;
     height: 1em;
     text-align: center;
     width: 100%;
-    bottom: 10px;
 }
 .madeBy a{
-    color: #414141;
+    color: lightgray;
     text-decoration: none;
     transition: ease 0.5s;
 }
