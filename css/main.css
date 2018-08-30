@@ -17,6 +17,15 @@ body{
     background-attachment: fixed;
     
 }
+#fotoIntrotekst{
+    box-sizing: border-box;
+    padding: 2%;
+    width: 20%;
+    float: right;
+}
+.introtekst{
+    text-align: justify;
+}
 .ytvideo{
     border-radius: 15px;
     overflow: hidden;
@@ -46,6 +55,9 @@ a > button{
     padding:1em;
 }
 @media screen and (max-width: 576px) {
+    #fotoIntrotekst{
+        display: none;
+    }
     .oudeschild{
         display: block;
         width: 50%;
@@ -112,4 +124,29 @@ a > button{
 .madeBy a:hover{
     color: white;
     cursor: pointer;
+}
+.ftr{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(47, 79, 79, 0.51);
+    color: lightgray;
+    /*#343a40*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 0.7em;
+}
+
+.ftr a{
+    text-decoration: none;
+    color: lightgray;
+}
+.ftr:hover{
+    transition: ease 1s;
+    background-color: yellow;
+    color: black;
+}
+.ftr:hover a{
+    transition: ease 1s;
+    color: black;
 }
