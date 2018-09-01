@@ -98,8 +98,7 @@ function init() {
             <small>${current.date}</small>
         </div>
         <p class="mb-1">${current.descr}</p>
-    </a>
-`
+    </a>`
         )
     }
 }
