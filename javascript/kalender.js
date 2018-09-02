@@ -51,7 +51,7 @@ const activiteitenJSON = [
     },
     {
         name: "Kroegentocht",
-        descr: "We maken een mooie wandeling door onze geliefde studentenstad waarbij korte pauzes nemen bij een paar van de vele kroegen.",
+        descr: "We maken een mooie wandeling door onze geliefde studentenstad waarbij we korte pauzes nemen bij een paar van de vele kroegen.",
         date: "30/10/2018"
     },
     {
