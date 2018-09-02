@@ -81,7 +81,7 @@ const activiteitenJSON = [
     },
     {
         name: "Massacantus",
-        descr: "Samen met nog en paar duizend studenten zingen we onze keel uit vlak voor we weer onze boeken van onder het stof halen!",
+        descr: "Samen met nog een paar duizend studenten zingen we onze keel uit vlak voor we weer onze boeken van onder het stof halen!",
         date: "12/12/2018"
     },
 
