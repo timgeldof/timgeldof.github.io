@@ -11,7 +11,7 @@ const activiteitenJSON = [
     },
     {
         name: "Bierbowling",
-        descr: "We tonen onze sportiviteit in de Overpoort bowl. Tussen de worpen door nemen we wel eens een slokje van ons pintje.",
+        descr: "We tonen onze sportiviteit in de Overpoort Bowl. Tussen de worpen door nemen we wel eens een slokje van ons pintje.",
         date: "02/10/2018"
     },
     {
