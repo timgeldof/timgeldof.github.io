@@ -92,7 +92,7 @@ function init() {
     for (let i = 0; i < activiteitenJSON.length; i++) {
         var current = activiteitenJSON[i];
         activiteiten.insertAdjacentHTML("beforeend", `
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <a class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">${current.name}</h5>
             <small>${current.date}</small>
