@@ -21,7 +21,7 @@ const activiteitenJSON = [
     },
     {
         name: "Cocktailnight",
-        descr: "Het praesidium verzorgt een breed assortiment cocktails in de coulissen voor een zeer schappelijke prijs.",
+        descr: "Het praesidium verzorgt een breed assortiment cocktails in de Coulissen voor een zeer schappelijke prijs.",
         date: "08/10/2018"
     },
     /*{
