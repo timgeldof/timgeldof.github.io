@@ -24,11 +24,11 @@ const activiteitenJSON = [
         descr: "Het praesidium verzorgt een breed assortiment cocktails in de coulissen voor een zeer schappelijke prijs.",
         date: "08/10/2018"
     },
-    {
+    /*{
         name: "Jeneverpetanque",
         descr: "We smijten grote metalen ballen om het dichtst bij een klein balletje. Tijdens het intensief sporten hydrateren we onze lichamen met een paar glaasjes jenever met verschillende smaken.",
         date: "10/10/2018"
-    },
+    },*/
     {
         name: "Sport: parkloop en touwtrekken",
         descr: "Competitie parkloop en touwtrekken tussen de studentenclubs die aangesloten zijn bij het SK Gent.",
