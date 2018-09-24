@@ -2,6 +2,7 @@ var propraesidia = [{
     "academiejaar": "2017-2018",
     "praesidium": {
         "Praeses": "Claudia Vanhaverbeke",
+        "Vice":"Lander Vansteeland",
         "Penning": "Tibo Rigole",
         "Secretaris": "Eva Vlaminck",
         "Feest 1": "Iene Deroo",
@@ -18,6 +19,7 @@ var propraesidia = [{
     "academiejaar": "2016-2017",
     "praesidium": {
         "Praeses": "Wouter Debakker",
+        "Vice": "Robbe Lapiere",
         "Penning": "Matthias Beckers",
         "Secretaris": "Pieter-Jan Tack",
         "Feest 1": "Valerie Lewyllie",
